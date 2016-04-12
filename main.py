@@ -19,4 +19,4 @@ with open(FILENAME, newline="") as f:
                 guest_wins += 1
             elif home > vis:
                 home_wins += 1
-    print("Home won {} times and visitors won {} times, out of {} games".format(home_wins, guest_wins, total_games))
+    print("Home won {} times ({}%) and visitors won {} times, ({}%) out of {} games".format(home_wins, home_wins / total_games, guest_wins, guest_wins / total_games, total_games))
